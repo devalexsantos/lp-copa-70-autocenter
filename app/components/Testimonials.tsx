@@ -3,7 +3,6 @@ import fiveStars from '../../public/images/five-stars.png'
 import testimonial01 from '../../public/images/testimonial-01.png'
 import testimonial02 from '../../public/images/testimonial-02.png'
 import testimonial03 from '../../public/images/testimonial-03.png'
-import { VideoIframe } from './VideoIframe'
 
 export function Testimonials() {
   return (
@@ -23,7 +22,15 @@ export function Testimonials() {
         <div className="flex flex-col gap-8">
           <h3 className="text-3xl italic text-[#013573] text-center">Depoimento de nosso Cliente</h3>
           <div className="w-full max-w-7xl h-[400px] md:h-[764px]">
-            <VideoIframe url="https://www.youtube.com/watch?v=VJwuqegRVp0" />
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/VJwuqegRVp0?si=dTe1ghEleVLUh5VZ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
           </div>
         </div>
       </div>
