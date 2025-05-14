@@ -9,7 +9,9 @@ const advantages = [
   "Alinhamento",
   "Balanceamento",
   "Correias",
-  "Injeção Eletrônica"
+  "Injeção Eletrônica",
+  "Descarbonização de Carros Diesel",
+  "Proteção de Amarok"
 ]
 
 export function Advantages() {
@@ -28,7 +30,7 @@ export function Advantages() {
                 advantages.map((advantage, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CircleCheck size={28} className="min-w-[28px] text-[#50AB54]" />
-                    <span className="text-3xl text-white font-medium">{advantage}</span>
+                    <span className="text-3xl text-white font-medium text-center">{advantage}</span>
                   </div>
                 ))
               }
